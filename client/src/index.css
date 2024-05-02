@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+:root {
+  --slugon-bg: #f3f3f3;
+  --footer-bg: #1e1c56;
+  --primary-color: #fcaf17;
+  --white: #fff;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: unset;
+  font-weight: bold;
+}
+a:hover {
+  color: var(--primary-color);
+}
+li {
+  list-style: none;
+}
+
+.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+.py-100{
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.card {
+  border: 1px solid transparent;
+
+}
+.card:hover {
+  border: 1px solid rgb(189, 186, 186);
+}
+
+
+.btn_add {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 6px;
+  font-weight: bold;
+  color: var(--white);
+ 
+}
+
+.btn_add:hover {
+  transform: translateY(-1px);
+  color: purple;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 10px; /* Adds gap between grid items */
+}
+
+.dot{
+  width: 200px; /* Định width của container */
+  white-space: nowrap; /* Ngăn text xuống dòng */
+  overflow: hidden; /* Ẩn bất kỳ text nào vượt quá kích thước của container */
+  text-overflow: ellipsis; /* Thêm dấu chấm ba (...) cho text bị ẩn */
+}
+
+.sticky-bottom{
+  position:sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

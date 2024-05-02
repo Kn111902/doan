@@ -1,0 +1,11 @@
+INSERT INTO public.colors (cid, color) VALUES 
+(1, 'red'),
+(2, 'white'),
+(3, 'blue');
+INSERT INTO public.sizes (sid, size) VALUES 
+(1, 'SM'),
+(2, 'MD'),
+(3, 'LG');
+INSERT INTO public.users (user_id, address_detail, avatar, district, first_name, is_sellers, last_name, password, phone, province, username, full_name) 
+VALUES ('1', '123 Street', 'avatar.jpg', 'Some District', 'John', true, 'Doe', '1', '123456789', 'Some Province', 'admin', 'John Doe');
+
